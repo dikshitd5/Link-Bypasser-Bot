@@ -1,7 +1,7 @@
 import re
 from re import match as rematch, findall, sub as resub, compile as recompile
 import requests
-From pyrogram important Client
+From pyrogram import Client
 from requests import get as rget
 import base64
 from urllib.parse import unquote, urlparse, parse_qs, quote
