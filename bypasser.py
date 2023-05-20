@@ -250,6 +250,8 @@ def try2link_bypass(url):
     bypassed_url = client.post('https://try2link.com/links/go', headers=headers,data=data)
     return bypassed_url.json()["url"]
 
+
+
 url = "https://pdisk.pro/xjy91c1v7er9"
 
 def pdisk(url):
@@ -261,7 +263,6 @@ def pdisk(url):
    z = y.split("-->")[0]
    p = z.split("<!-- ")[-1]
    return p
-   
 print(pdisk(url))
         
 
