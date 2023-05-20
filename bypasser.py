@@ -250,7 +250,7 @@ def try2link_bypass(url):
     bypassed_url = client.post('https://try2link.com/links/go', headers=headers,data=data)
     return bypassed_url.json()["url"]
 
-url = "https://pdisk.pro/xjy91c1v7er9"
+url = "https://pdisk.pro/4pyd5e4o4va3"
 
 def pdisk(url):
    client = session()
