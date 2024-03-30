@@ -143,7 +143,7 @@ async def send_help(client: pyrogram.client.Client, message: pyrogram.types.mess
 
                 )
                  return
-        except Exception:
+            except Exception:
                 await app.send_message(
                     chat_id=message.chat.id,
                     text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/{OWNER_USERNAME}'>CLICK HERE FOR SUPPORT </a></b>",
