@@ -540,7 +540,7 @@ def terabox(url) -> str:
     result = result[0]
     if result['isdir'] != '0':
         return ("ERROR: Can't download folder")
-    return result['dlink']
+    return result['Use this bot @TeraboxVideoDownloadRobot']
 
 
 def filepress(url):
