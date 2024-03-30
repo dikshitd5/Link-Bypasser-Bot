@@ -110,9 +110,9 @@ shortnertext = """__- igg-games \n\
 - thinfi \n\
 __"""
 
+# **List of Sites for GDrive Look-ALike : ** \n\n{gdrivetext} \n\
 
 HELP_TEXT = f'**--Just Send me any Supported Links From Below Mentioned Sites--** \n\n\
 **List of Sites for DDL : ** \n\n{ddltext} \n\
 **List of Sites for Shortners : ** \n\n{shortnertext} \n\
-**List of Sites for GDrive Look-ALike : ** \n\n{gdrivetext} \n\
 **Other Supported Sites : ** \n\n{otherstext}'
