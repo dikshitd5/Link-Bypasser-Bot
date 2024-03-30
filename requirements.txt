@@ -7,7 +7,7 @@ tgcrypto
 lxml
 lk21
 cfscrape
-urllib3
+urllib3<2
 Flask
 gunicorn
 aiohttp
