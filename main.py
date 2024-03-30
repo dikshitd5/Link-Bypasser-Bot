@@ -103,7 +103,13 @@ async def send_start(client: pyrogram.client.Client, message: pyrogram.types.mes
 
                 )
                  return
-            
+            except Exception:
+                await app.send_message(
+                    chat_id=message.chat.id,
+                    text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/{OWNER_USERNAME}'>CLICK HERE FOR SUPPORT </a></b>",
+
+                    disable_web_page_preview=True)
+                return
     await app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
                            reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("❤️ Owner ❤️", url=f"https://telegram.me/{OWNER_USERNAME}")]]), reply_to_message_id=message.id)
 
@@ -137,7 +143,13 @@ async def send_help(client: pyrogram.client.Client, message: pyrogram.types.mess
 
                 )
                  return
-        
+        except Exception:
+                await app.send_message(
+                    chat_id=message.chat.id,
+                    text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/{OWNER_USERNAME}'>CLICK HERE FOR SUPPORT </a></b>",
+
+                    disable_web_page_preview=True)
+                return
     await app.send_message(message.chat.id, HELP_TEXT, reply_to_message_id=message.id, disable_web_page_preview=True)
 
 @app.on_message(filters.command(["authorize"]))
@@ -256,7 +268,13 @@ async def receive(client: pyrogram.client.Client, message: pyrogram.types.messag
 
                 )
                  return
-            
+            except Exception:
+                await app.send_message(
+                    chat_id=message.chat.id,
+                    text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/{OWNER_USERNAME}'>CLICK HERE FOR SUPPORT </a></b>",
+
+                    disable_web_page_preview=True)
+                return
     bypass = threading.Thread(target=lambda:loopthread(message),daemon=True)
     bypass.start()
 
@@ -302,7 +320,13 @@ async def docfile(client: pyrogram.client.Client, message: pyrogram.types.messag
 
                 )
                  return
-            
+            except Exception:
+                await app.send_message(
+                    chat_id=message.chat.id,
+                    text=f"<i>Something went wrong</i> <b> <a href='https://telegram.me/{OWNER_USERNAME}'>CLICK HERE FOR SUPPORT </a></b>",
+
+                    disable_web_page_preview=True)
+                return
     if message.document.file_name.endswith(".dlc"):
         bypass = threading.Thread(target=lambda:docthread(message),daemon=True)
         bypass.start()
